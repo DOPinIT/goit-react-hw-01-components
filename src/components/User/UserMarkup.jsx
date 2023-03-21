@@ -5,7 +5,7 @@ import { UserProfile } from './Profile.styled';
 
 export const User = ({ user }) => {
   return (
-    <UserProfile key={user.tag}>
+    <UserProfile>
       <ProfileDescription user={user} />
       <ProfileStats user={user} />
     </UserProfile>
