@@ -1,15 +1,13 @@
 import PropTypes from 'prop-types';
 import { Description, Image } from './ProfileDescription.styled';
 
-export const ProfileDescription = ({
-  user: { avatar, username, tag, location },
-}) => {
+export const ProfileDescription = (user) => {
   return (
     <Description>
-      <Image src={avatar} alt="User avatar" />
-      <p>{username}</p>
-      <p>@{tag}</p>
-      <p>{location}</p>
+      <Image src={user.avatar} alt="User avatar" />
+      <p>{user.username}</p>
+      <p>@{user.tag}</p>
+      <p>{user.location}</p>
     </Description>
   );
 };
